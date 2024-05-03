@@ -46,10 +46,7 @@ public class OpModeUtils {
         return true;
     }
 
-    /**
-     * I'm lazy
-     * @param o
-     */
+
     public static void print(Object o){
         System.out.println(o);
     }

@@ -1,13 +1,13 @@
 package org.firstinspires.ftc.teamcode.TeleOp;
 
+import static org.firstinspires.ftc.teamcode.Utilities.OpModeUtils.multTelemetry;
+
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.util.ElapsedTime;
-import static org.firstinspires.ftc.teamcode.Utilities.OpModeUtils.multTelemetry;
 
-@TeleOp(name="Iterative TeleOp", group="Iterative Opmode")
-public class IterativeTeleOp extends OpMode {
-
+@TeleOp(name="Rocket League", group="Iterative Opmode")
+public class RocketLeague extends OpMode {
     //Declare Subsystems
 
     //Timer
@@ -33,7 +33,6 @@ public class IterativeTeleOp extends OpMode {
     @Override
     public void stop(){
         //Code that runs when you hit stop
-
         multTelemetry.addData("Runtime", runtime);
         multTelemetry.update();
 
